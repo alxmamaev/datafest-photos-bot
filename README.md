@@ -1,2 +1,2 @@
 # datafest-photos-bot
-This bot allows you find photos with you by you'r selfie.
+This bot allows find photos with you by you'r selfie.
