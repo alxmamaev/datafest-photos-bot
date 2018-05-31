@@ -1,0 +1,6 @@
+pytelegrambotapi
+annoy
+numpy
+scikit-image
+face_recognition
+tqdm
