@@ -42,7 +42,7 @@ def get_nn_vector_index(vector):
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
 	bot.send_message(message.chat.id, "Привет, я бот, я могу распознавать людей по лицам.\nДля этого просто отправь свое селфи 🤳.")
-
+	et_state(message, "get-photo")
 
 @bot.message_handler(content_types=["photo"], func=lambda m: get_state(m) == "get-photo")
 def process_selfie(message):
@@ -81,4 +81,4 @@ def process_name(message):
 	set_state(message, "get-photo")
 
 
-bot.polling()
+bot.polling(none_stop=True, timeout=200)
