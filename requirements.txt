@@ -5,3 +5,4 @@ scikit-image
 face_recognition
 tqdm
 scipy
+imageio
